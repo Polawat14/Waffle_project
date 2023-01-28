@@ -1,9 +1,10 @@
+package dfsdfsfsf;
 
-public class test1 {
+public class fsfss {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print("Test");
+
 	}
 
 }
