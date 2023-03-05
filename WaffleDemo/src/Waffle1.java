@@ -5,6 +5,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.Color;
 import javax.swing.JComboBox;
+import javax.print.DocFlavor.STRING;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.Font;
 import javax.swing.JTextField;
@@ -16,10 +17,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Toolkit;
 
-public class Waffle2 extends JFrame {
+public class Waffle1 extends JFrame {
+	public  String Size ="";
+	
 
 	private JPanel contentPane;
-
+;
 	/**
 	 * Launch the application.
 	 */
@@ -27,7 +30,7 @@ public class Waffle2 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Waffle2 frame = new Waffle2();
+					Waffle1 frame = new Waffle1();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -39,7 +42,8 @@ public class Waffle2 extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Waffle2() {
+	
+	public Waffle1() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\D4bby\\Downloads\\0d1e70fd160476a3f78496be79e0813e.png"));
 		setTitle("Waffle Nanoom");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -50,22 +54,6 @@ public class Waffle2 extends JFrame {
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JComboBox comboBox = new JComboBox();
-		comboBox.setToolTipText("");
-		comboBox.setFont(new Font("Yu Mincho", Font.BOLD, 23));
-		comboBox.setForeground(new Color(255, 132, 72));
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"-", "S", "M", "L"}));
-		comboBox.setBackground(new Color(255, 255, 255));
-		comboBox.setBounds(374, 442, 205, 52);
-		contentPane.add(comboBox);
-		
-		JLabel lblNewLabel = new JLabel("Size : ");
-		lblNewLabel.setForeground(new Color(255, 132, 72));
-		lblNewLabel.setBackground(new Color(255, 132, 72));
-		lblNewLabel.setFont(new Font("Yu Mincho", Font.BOLD, 36));
-		lblNewLabel.setBounds(262, 436, 120, 63);
-		contentPane.add(lblNewLabel);
 		
 		JLabel lblSmall = new JLabel("Small");
 		lblSmall.setForeground(new Color(255, 132, 72));
@@ -81,25 +69,6 @@ public class Waffle2 extends JFrame {
 		lblSmall_1.setBounds(111, 326, 95, 52);
 		contentPane.add(lblSmall_1);
 		
-		JButton btnCancel = new JButton("Cancel");
-		btnCancel.setVerticalAlignment(SwingConstants.BOTTOM);
-		btnCancel.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnCancel.setForeground(new Color(255, 132, 72));
-		btnCancel.setFont(new Font("Yu Mincho", Font.BOLD, 28));
-		btnCancel.setBackground(Color.WHITE);
-		btnCancel.setBounds(648, 574, 194, 52);
-		contentPane.add(btnCancel);
-		
-		JButton btnNext = new JButton("Next");
-		btnNext.setVerticalAlignment(SwingConstants.BOTTOM);
-		btnNext.setForeground(new Color(255, 132, 72));
-		btnNext.setFont(new Font("Yu Mincho", Font.BOLD, 28));
-		btnNext.setBackground(Color.WHITE);
-		btnNext.setBounds(418, 574, 194, 52);
-		contentPane.add(btnNext);
 		
 		JLabel lblMedium = new JLabel("Medium");
 		lblMedium.setForeground(new Color(255, 132, 72));
@@ -153,7 +122,60 @@ public class Waffle2 extends JFrame {
 		
 		JLabel lblNewLabel_1_1 = new JLabel("");
 		lblNewLabel_1_1.setIcon(new ImageIcon("C:\\Users\\D4bby\\OneDrive\\เดสก์ท็อป\\photo gui\\0d1e70fd160476a3f78496be79e0813e-65x75.png"));
-		lblNewLabel_1_1.setBounds(10, 551, 65, 75);
+		lblNewLabel_1_1.setBounds(10, 575, 65, 75);
 		contentPane.add(lblNewLabel_1_1);
+		
+		JButton btnCancel = new JButton("Cancel");
+		btnCancel.setVerticalAlignment(SwingConstants.BOTTOM);
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnCancel.setForeground(new Color(255, 132, 72));
+		btnCancel.setFont(new Font("Yu Mincho", Font.BOLD, 28));
+		btnCancel.setBackground(Color.WHITE);
+		btnCancel.setBounds(648, 586, 194, 52);
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		contentPane.add(btnCancel);
+		
+		JButton GOWaffle3 = new JButton("M");
+		GOWaffle3.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		GOWaffle3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Waffle3 goS = new Waffle3();
+				goS.show();
+				dispose();
+			}
+		});
+		GOWaffle3.setBounds(374, 416, 143, 63);
+		contentPane.add(GOWaffle3);
+		
+		JButton GOWaffle2 = new JButton("S");
+		GOWaffle2.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		GOWaffle2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Waffle2 goS = new Waffle2();
+				goS.show();
+				dispose();
+			}
+		});
+		GOWaffle2.setBounds(63, 416, 143, 63);
+		contentPane.add(GOWaffle2);
+		
+		JButton GOWaffle4 = new JButton("L");
+		GOWaffle4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Waffle4 goS = new Waffle4();
+				goS.show();
+				dispose();
+			}
+		});
+		GOWaffle4.setFont(new Font("Tahoma", Font.PLAIN, 30));
+		GOWaffle4.setBounds(676, 416, 143, 63);
+		contentPane.add(GOWaffle4);
 	}
 }
