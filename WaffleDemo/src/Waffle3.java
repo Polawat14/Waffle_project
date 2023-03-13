@@ -44,8 +44,8 @@ public class Waffle3 extends JFrame {
 	 */
 	@SuppressWarnings("unlikely-arg-type")
 	public Waffle3() {
-		
-		
+
+
 		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\D4bby\\Downloads\\0d1e70fd160476a3f78496be79e0813e.png"));
 		setTitle("Waffle Nanoom");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -56,14 +56,14 @@ public class Waffle3 extends JFrame {
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JLabel lblSmall = new JLabel("Medium");
 		lblSmall.setForeground(new Color(255, 132, 72));
 		lblSmall.setFont(new Font("Yu Mincho", Font.BOLD, 60));
 		lblSmall.setBackground(new Color(255, 132, 72));
 		lblSmall.setBounds(315, 24, 257, 117);
 		contentPane.add(lblSmall);
-		
+
 		JRadioButton medium_Origin = new JRadioButton("Original");
 		medium_Origin.setHorizontalAlignment(SwingConstants.CENTER);
 		medium_Origin.setFont(new Font("Yu Mincho", Font.BOLD, 28));
@@ -71,7 +71,7 @@ public class Waffle3 extends JFrame {
 		medium_Origin.setForeground(new Color(255, 132, 72));
 		medium_Origin.setBounds(301, 141, 149, 40);
 		contentPane.add(medium_Origin);
-		
+
 		JRadioButton medium_Choc = new JRadioButton("Chocolate");
 		medium_Choc.setHorizontalAlignment(SwingConstants.CENTER);
 		medium_Choc.setFont(new Font("Yu Mincho", Font.BOLD, 28));
@@ -79,7 +79,7 @@ public class Waffle3 extends JFrame {
 		medium_Choc.setForeground(new Color(255, 132, 72));
 		medium_Choc.setBounds(548, 188, 210, 93);
 		contentPane.add(medium_Choc);
-		
+
 		JRadioButton medium_Strawberry = new JRadioButton("Strawberry");
 		medium_Strawberry.setHorizontalAlignment(SwingConstants.CENTER);
 		medium_Strawberry.setFont(new Font("Yu Mincho", Font.BOLD, 28));
@@ -87,7 +87,7 @@ public class Waffle3 extends JFrame {
 		medium_Strawberry.setForeground(new Color(255, 132, 72));
 		medium_Strawberry.setBounds(295, 202, 202, 65);
 		contentPane.add(medium_Strawberry);
-		
+
 		JRadioButton medium_Green = new JRadioButton("Green Tea");
 		medium_Green.setFont(new Font("Yu Mincho", Font.BOLD, 28));
 		medium_Green.setHorizontalAlignment(SwingConstants.CENTER);
@@ -95,27 +95,27 @@ public class Waffle3 extends JFrame {
 		medium_Green.setForeground(new Color(255, 132, 72));
 		medium_Green.setBounds(551, 133, 202, 57);
 		contentPane.add(medium_Green);
-		
+
 		ButtonGroup group = new ButtonGroup();
 		group.add(medium_Origin);
 		group.add(medium_Choc);
 		group.add(medium_Strawberry);
 		group.add(medium_Green);
-		
+
 		JLabel lblFlour = new JLabel("Flour :");
 		lblFlour.setForeground(new Color(255, 132, 72));
 		lblFlour.setFont(new Font("Yu Mincho", Font.BOLD, 32));
 		lblFlour.setBackground(new Color(255, 132, 72));
 		lblFlour.setBounds(137, 128, 119, 65);
 		contentPane.add(lblFlour);
-		
+
 		JLabel lblTopping = new JLabel("Topping :");
 		lblTopping.setForeground(new Color(255, 132, 72));
 		lblTopping.setFont(new Font("Yu Mincho", Font.BOLD, 32));
 		lblTopping.setBackground(new Color(255, 132, 72));
 		lblTopping.setBounds(91, 297, 163, 54);
 		contentPane.add(lblTopping);
-		
+
 		JComboBox<String> medium_Topping1 = new JComboBox<String>();
 		medium_Topping1.setFont(new Font("Yu Mincho", Font.BOLD, 26));
 		medium_Topping1.addItem("-");
@@ -136,14 +136,14 @@ public class Waffle3 extends JFrame {
 		medium_Topping1.setToolTipText("");
 		medium_Topping1.setBounds(264, 310, 330, 30);
 		contentPane.add(medium_Topping1);
-		
+
 		JLabel lblTopping_2 = new JLabel("Topping :");
 		lblTopping_2.setForeground(new Color(255, 132, 72));
 		lblTopping_2.setFont(new Font("Yu Mincho", Font.BOLD, 32));
 		lblTopping_2.setBackground(new Color(255, 132, 72));
 		lblTopping_2.setBounds(91, 351, 163, 54);
 		contentPane.add(lblTopping_2);
-		
+
 		JComboBox<String> medium_Topping2 = new JComboBox<String>();
 		medium_Topping2.addItem("-");
 		medium_Topping2.addItem("Corn");
@@ -164,26 +164,26 @@ public class Waffle3 extends JFrame {
 		medium_Topping2.setFont(new Font("Yu Mincho", Font.BOLD, 26));
 		medium_Topping2.setBounds(264, 364, 330, 30);
 		contentPane.add(medium_Topping2);
-		
+
 		JLabel lblNewLabel = new JLabel("Waffle Nanoom");
 		lblNewLabel.setVerticalAlignment(SwingConstants.BOTTOM);
 		lblNewLabel.setForeground(new Color(255, 132, 72));
 		lblNewLabel.setFont(new Font("Yu Mincho", Font.BOLD, 18));
 		lblNewLabel.setBounds(85, 586, 163, 40);
 		contentPane.add(lblNewLabel);
-		
+
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\D4bby\\OneDrive\\เดสก์ท็อป\\photo gui\\0d1e70fd160476a3f78496be79e0813e-65x75.png"));
+		lblNewLabel_1.setIcon(new ImageIcon(Waffle3.class.getResource("/resource/0d1e70fd160476a3f78496be79e0813e-65x75.png")));
 		lblNewLabel_1.setBounds(10, 575, 65, 75);
 		contentPane.add(lblNewLabel_1);
-		
+
 		JLabel lblTopping_1 = new JLabel("Topping :");
 		lblTopping_1.setForeground(new Color(255, 132, 72));
 		lblTopping_1.setFont(new Font("Yu Mincho", Font.BOLD, 32));
 		lblTopping_1.setBackground(new Color(255, 132, 72));
-		lblTopping_1.setBounds(91, 415, 163, 54);
+		lblTopping_1.setBounds(93, 415, 163, 54);
 		contentPane.add(lblTopping_1);
-		
+
 		JComboBox<String> medium_Topping3 = new JComboBox<String>();
 		medium_Topping3.addItem("-");
 		medium_Topping3.addItem("Corn");
@@ -204,8 +204,8 @@ public class Waffle3 extends JFrame {
 		medium_Topping3.setFont(new Font("Yu Mincho", Font.BOLD, 26));
 		medium_Topping3.setBounds(264, 428, 330, 30);
 		contentPane.add(medium_Topping3);
-		
-		
+
+
 		JLabel lblPer = new JLabel("10 ฿ per topping");
 		lblPer.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPer.setForeground(new Color(255, 132, 72));
@@ -213,23 +213,23 @@ public class Waffle3 extends JFrame {
 		lblPer.setBackground(new Color(255, 132, 72));
 		lblPer.setBounds(301, 271, 257, 54);
 		contentPane.add(lblPer);
-				
+
 		JTextField textDiscount = new JTextField();
-		textDiscount.setText("Enter you code for discount 10 ฿");
-		textDiscount.setBounds(267, 508, 371, 35);
+		textDiscount.setText("Enter you code for discount ");
+		textDiscount.setBounds(264, 492, 330, 35);
 		contentPane.add(textDiscount);
 		textDiscount.setColumns(10);
-		
+
 		JButton medium_Next = new JButton("Confirm");
 		medium_Next.addActionListener(new ActionListener() {
-					
+
 			int price = 60;
 			String top1,top2,top3,flour;
 			public void actionPerformed(ActionEvent arg0) {	
 				if(textDiscount.getText().equals("11111")){
 					price = price - 10;
 				}
-				
+
 				if(medium_Green.isSelected()) {
 					flour = "Green Tea"; 
 				}else if(medium_Strawberry.isSelected()){
@@ -239,17 +239,17 @@ public class Waffle3 extends JFrame {
 				}else {
 					flour = "Original"; 
 				}
-				
+
 				top1 = (String)medium_Topping1.getSelectedItem();
 				top2 = (String)medium_Topping2.getSelectedItem();
 				top3 = (String)medium_Topping3.getSelectedItem();
-				
+
 				if(top1.equals("-")) price = price-10;
 				if(top2.equals("-")) price = price-10;
 				if(top3.equals("-")) price = price-10;
-				
+
 				JOptionPane.showMessageDialog(lblPer,"Size : M\nFlout : "+flour+"\nTopping : "+
-				top1+"\nTopping : "+top2+"\nTopping : "+top3+"\nPrice : "+price);	
+				top1+"\nTopping : "+top2+"\nTopping : "+top3+"\nPrice : "+price, "Bill",JOptionPane.PLAIN_MESSAGE);	
 				System.exit(0);
 			}
 		});
@@ -257,9 +257,9 @@ public class Waffle3 extends JFrame {
 		medium_Next.setForeground(new Color(255, 132, 72));
 		medium_Next.setFont(new Font("Yu Mincho", Font.BOLD, 28));
 		medium_Next.setBackground(Color.WHITE);
-		medium_Next.setBounds(418, 586, 194, 52);
+		medium_Next.setBounds(418, 575, 194, 63);
 		contentPane.add(medium_Next);
-		
+
 		JButton medium_Back = new JButton("Back");
 		medium_Back.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
@@ -273,8 +273,27 @@ public class Waffle3 extends JFrame {
 		medium_Back.setForeground(new Color(255, 132, 72));
 		medium_Back.setFont(new Font("Yu Mincho", Font.BOLD, 28));
 		medium_Back.setBackground(Color.WHITE);
-		medium_Back.setBounds(648, 586, 194, 52);
+		medium_Back.setBounds(648, 575, 194, 63);
 		contentPane.add(medium_Back);
+
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(255, 81, 85));
+		panel.setBounds(248, 211, 41, 30);
+		contentPane.add(panel);
+
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(255, 128, 64));
+		panel_1.setBounds(248, 141, 41, 30);
+		contentPane.add(panel_1);
+
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBackground(new Color(0, 185, 92));
+		panel_1_1.setBounds(505, 141, 41, 30);
+		contentPane.add(panel_1_1);
+
+		JPanel panel_1_1_1 = new JPanel();
+		panel_1_1_1.setBackground(new Color(128, 64, 64));
+		panel_1_1_1.setBounds(503, 211, 41, 30);
+		contentPane.add(panel_1_1_1);
 	}
-	
 }

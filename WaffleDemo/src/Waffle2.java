@@ -20,10 +20,14 @@ import javax.swing.ButtonGroup;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JTextField;
+import javax.swing.JTabbedPane;
+import javax.swing.JTree;
+import javax.swing.JSlider;
+import javax.swing.JScrollPane;
 
 public class Waffle2 extends JFrame {
-	
-	
+
+
 	private JPanel contentPane;
 	private JTextField textDiscount;
 	private int price = 40;
@@ -58,21 +62,21 @@ public class Waffle2 extends JFrame {
 
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
+
 		JLabel lblSmall = new JLabel("Small");
 		lblSmall.setForeground(new Color(255, 132, 72));
 		lblSmall.setFont(new Font("Yu Mincho", Font.BOLD, 60));
 		lblSmall.setBackground(new Color(255, 132, 72));
 		lblSmall.setBounds(367, 24, 330, 117);
 		contentPane.add(lblSmall);
-		
+
 		JLabel lblTopping = new JLabel("Topping :");
 		lblTopping.setForeground(new Color(255, 132, 72));
 		lblTopping.setFont(new Font("Yu Mincho", Font.BOLD, 32));
 		lblTopping.setBackground(new Color(255, 132, 72));
-		lblTopping.setBounds(91, 285, 163, 54);
+		lblTopping.setBounds(91, 302, 163, 54);
 		contentPane.add(lblTopping);
-		
+
 		JComboBox<String> small_Topping1 = new JComboBox<String>();
 		small_Topping1.setFont(new Font("Yu Mincho", Font.BOLD, 20));
 		small_Topping1.addItem("-");
@@ -91,9 +95,9 @@ public class Waffle2 extends JFrame {
 		small_Topping1.addItem("Strawberryy Yam");
 		//small_Topping1.setModel(new DefaultComboBoxModel(new String[] {"-", "Corn", "Crab strick", "Currant", "Foytong", "Pumpkin", "Coconut", "Taro", "Purple Sweet Potato", "Banana", "Chocolate chip", "Ham", "Cheddar Cheese", "Strawberryy Yam"}));
 		small_Topping1.setToolTipText("");
-		small_Topping1.setBounds(264, 291, 330, 44);
+		small_Topping1.setBounds(264, 308, 392, 44);
 		contentPane.add(small_Topping1);
-		
+
 		JRadioButton small_origin = new JRadioButton("Original");
 		small_origin.setHorizontalAlignment(SwingConstants.CENTER);
 		small_origin.setFont(new Font("Yu Mincho", Font.BOLD, 28));
@@ -101,7 +105,7 @@ public class Waffle2 extends JFrame {
 		small_origin.setForeground(new Color(255, 132, 72));
 		small_origin.setBounds(301, 141, 149, 40);
 		contentPane.add(small_origin);
-		
+
 		JRadioButton small_Choc = new JRadioButton("Chocolate");
 		small_Choc.setHorizontalAlignment(SwingConstants.CENTER);
 		small_Choc.setFont(new Font("Yu Mincho", Font.BOLD, 28));
@@ -109,7 +113,7 @@ public class Waffle2 extends JFrame {
 		small_Choc.setForeground(new Color(255, 132, 72));
 		small_Choc.setBounds(548, 188, 210, 93);
 		contentPane.add(small_Choc);
-		
+
 		JRadioButton small_Strawberry = new JRadioButton("Strawberry");
 		small_Strawberry.setHorizontalAlignment(SwingConstants.CENTER);
 		small_Strawberry.setFont(new Font("Yu Mincho", Font.BOLD, 28));
@@ -117,7 +121,7 @@ public class Waffle2 extends JFrame {
 		small_Strawberry.setForeground(new Color(255, 132, 72));
 		small_Strawberry.setBounds(295, 202, 202, 65);
 		contentPane.add(small_Strawberry);
-		
+
 		JRadioButton small_Green = new JRadioButton("Green Tea");
 		small_Green.setFont(new Font("Yu Mincho", Font.BOLD, 28));
 		small_Green.setHorizontalAlignment(SwingConstants.CENTER);
@@ -125,29 +129,29 @@ public class Waffle2 extends JFrame {
 		small_Green.setForeground(new Color(255, 132, 72));
 		small_Green.setBounds(551, 133, 202, 57);
 		contentPane.add(small_Green);
-		
+
 		ButtonGroup group = new ButtonGroup();
 		group.add(small_origin);
 		group.add(small_Choc);
 		group.add(small_Strawberry);
 		group.add(small_Green);
-		
+
 		JLabel lblFlour = new JLabel("Flour :");
 		lblFlour.setForeground(new Color(255, 132, 72));
 		lblFlour.setFont(new Font("Yu Mincho", Font.BOLD, 32));
 		lblFlour.setBackground(new Color(255, 132, 72));
 		lblFlour.setBounds(137, 128, 119, 65);
 		contentPane.add(lblFlour);
-		
-		
-		
+
+
+
 		JLabel lblTopping_2 = new JLabel("Topping :");
 		lblTopping_2.setForeground(new Color(255, 132, 72));
 		lblTopping_2.setFont(new Font("Yu Mincho", Font.BOLD, 32));
 		lblTopping_2.setBackground(new Color(255, 132, 72));
-		lblTopping_2.setBounds(91, 350, 163, 54);
+		lblTopping_2.setBounds(91, 366, 163, 54);
 		contentPane.add(lblTopping_2);
-		
+
 		JComboBox<String> small_Topping2 = new JComboBox<String>();
 		small_Topping2.addItem("-");
 		small_Topping2.addItem("Corn");
@@ -166,50 +170,50 @@ public class Waffle2 extends JFrame {
 		//small_Topping2.setModel(new DefaultComboBoxModel(new String[] {"-", "Corn", "Crab strick", "Currant", "Foytong", "Pumpkin", "Coconut", "Taro", "Purple Sweet Potato", "Banana", "Chocolate chip", "Ham", "Cheddar Cheese", "Strawberryy Yam"}));
 		small_Topping2.setToolTipText("");
 		small_Topping2.setFont(new Font("Yu Mincho", Font.BOLD, 26));
-		small_Topping2.setBounds(264, 349, 330, 44);
+		small_Topping2.setBounds(264, 362, 392, 44);
 		contentPane.add(small_Topping2);
-		
-		
-		
+
+
+
 		JLabel lblNewLabel = new JLabel("Waffle Nanoom");
 		lblNewLabel.setVerticalAlignment(SwingConstants.BOTTOM);
 		lblNewLabel.setForeground(new Color(255, 132, 72));
 		lblNewLabel.setFont(new Font("Yu Mincho", Font.BOLD, 18));
 		lblNewLabel.setBounds(85, 586, 163, 40);
 		contentPane.add(lblNewLabel);
-		
+
 		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\D4bby\\OneDrive\\เดสก์ท็อป\\photo gui\\0d1e70fd160476a3f78496be79e0813e-65x75.png"));
+		lblNewLabel_1.setIcon(new ImageIcon(Waffle2.class.getResource("/resource/0d1e70fd160476a3f78496be79e0813e-65x75.png")));
 		lblNewLabel_1.setBounds(10, 575, 65, 75);
 		contentPane.add(lblNewLabel_1);
-		
+
 		JLabel lblPer = new JLabel("10 ฿ per topping");
 		lblPer.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPer.setForeground(new Color(255, 132, 72));
 		lblPer.setFont(new Font("Yu Mincho", Font.BOLD, 16));
 		lblPer.setBackground(new Color(255, 132, 72));
-		lblPer.setBounds(301, 256, 257, 54);
+		lblPer.setBounds(285, 265, 257, 54);
 		contentPane.add(lblPer);
-		
+
 		textDiscount = new JTextField();
-		textDiscount.setText("Enter you code for discount 10 ฿");
-		textDiscount.setBounds(241, 507, 371, 35);
+		textDiscount.setText("Enter you code for discount ");
+		textDiscount.setBounds(264, 470, 392, 35);
 		contentPane.add(textDiscount);
 		textDiscount.setColumns(10);
-		
+
 		Dimension objDimension = Toolkit.getDefaultToolkit().getScreenSize();
-		
+
 		JButton small_Next = new JButton("Confirm");
 		small_Next.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
-			
+
 			String top1,top2,top3,flour;
 			public void actionPerformed(ActionEvent e) {
-				
+
 				if(textDiscount.getText().equals("11111")){
 					price = price - 10;
 				}
-				
+
 				if(small_Green.isSelected()) {
 					flour = "Green Tea"; 
 				}else if(small_Strawberry.isSelected()){
@@ -219,29 +223,29 @@ public class Waffle2 extends JFrame {
 				}else {
 					flour = "Original"; 
 				}
-				
+
 				top1 = (String)small_Topping1.getSelectedItem();
 				top2 = (String)small_Topping2.getSelectedItem();
-								
+
 				if(top1.equals("-")) price = price-10;
 				if(top2.equals("-")) price = price-10;
-				
-				
+
+
 				JOptionPane.showMessageDialog(lblPer,"Size : M\nFlout : "+flour+"\nTopping : "+
-				top1+"\nTopping : "+top2+"\nPrice : "+price);	
+				top1+"\nTopping : "+top2+"\nPrice : "+price, "Bill",JOptionPane.PLAIN_MESSAGE);	
 				System.exit(0);
 			}
 		});
-		
-		
-		
+
+
+
 		small_Next.setVerticalAlignment(SwingConstants.BOTTOM);
 		small_Next.setForeground(new Color(255, 132, 72));
 		small_Next.setFont(new Font("Yu Mincho", Font.BOLD, 28));
 		small_Next.setBackground(Color.WHITE);
-		small_Next.setBounds(418, 586, 194, 52);
+		small_Next.setBounds(418, 575, 194, 63);
 		contentPane.add(small_Next);
-		
+
 		JButton small_Back = new JButton("Back");
 		small_Back.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
@@ -255,14 +259,34 @@ public class Waffle2 extends JFrame {
 		small_Back.setForeground(new Color(255, 132, 72));
 		small_Back.setFont(new Font("Yu Mincho", Font.BOLD, 28));
 		small_Back.setBackground(Color.WHITE);
-		small_Back.setBounds(648, 586, 194, 52);
+		small_Back.setBounds(648, 575, 194, 63);
 		contentPane.add(small_Back);
-		
-		
-		
-		
-		
-		
-		
+
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(new Color(255, 128, 64));
+		panel_1.setBounds(254, 141, 41, 30);
+		contentPane.add(panel_1);
+
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(255, 81, 85));
+		panel.setBounds(254, 214, 41, 30);
+		contentPane.add(panel);
+
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBackground(new Color(0, 185, 92));
+		panel_1_1.setBounds(503, 141, 41, 30);
+		contentPane.add(panel_1_1);
+
+		JPanel panel_1_1_1 = new JPanel();
+		panel_1_1_1.setBackground(new Color(128, 64, 64));
+		panel_1_1_1.setBounds(503, 216, 41, 30);
+		contentPane.add(panel_1_1_1);
+
+
+
+
+
+
+
 	}
 }

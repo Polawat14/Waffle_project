@@ -43,14 +43,14 @@ public class WaffleDemo extends JFrame {
 
   setContentPane(contentPane);
   contentPane.setLayout(null);
-  
+
   JLabel lblNewLabel = new JLabel("Waffle Nanoom");
   lblNewLabel.setForeground(new Color(255, 132, 72));
   lblNewLabel.setVerticalAlignment(SwingConstants.BOTTOM);
   lblNewLabel.setFont(new Font("Yu Mincho", Font.BOLD, 60));
   lblNewLabel.setBounds(221, 41, 473, 137);
   contentPane.add(lblNewLabel);
-  
+
   JButton btnNewButton = new JButton("Order");
   btnNewButton.setVerticalAlignment(SwingConstants.BOTTOM);
   btnNewButton.setFont(new Font("Yu Mincho", Font.BOLD, 20));
@@ -60,21 +60,21 @@ public class WaffleDemo extends JFrame {
    public void actionPerformed(ActionEvent arg0) {
 	   Waffle1 order = new Waffle1();
     order.show();
-    
+
     dispose();
    }
   });
-  
+
   btnNewButton.setBounds(137, 531, 194, 52);
   contentPane.add(btnNewButton);
-  
+
   JLabel lblNewLabel_1 = new JLabel("");
-  lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\D4bby\\Downloads\\0d1e70fd160476a3f78496be79e0813e.png"));
+  lblNewLabel_1.setIcon(new ImageIcon(WaffleDemo.class.getResource("/resource/0d1e70fd160476a3f78496be79e0813e-300x300.png")));
   lblNewLabel_1.setBounds(268, 145, 527, 376);
   contentPane.add(lblNewLabel_1);
-  
+
   JButton btnClose = new JButton("Close");
-  
+
   btnClose.setVerticalAlignment(SwingConstants.BOTTOM);
   btnClose.setForeground(new Color(255, 132, 72));
   btnClose.setFont(new Font("Yu Mincho", Font.BOLD, 20));
@@ -85,7 +85,7 @@ public class WaffleDemo extends JFrame {
     System.exit(0);
    }
   });
-  
+
   contentPane.add(btnClose);
  }
 }
