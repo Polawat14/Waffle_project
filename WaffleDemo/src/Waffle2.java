@@ -231,7 +231,7 @@ public class Waffle2 extends JFrame {
 				if(top2.equals("-")) price = price-10;
 
 
-				JOptionPane.showMessageDialog(lblPer,"Size : M\nFlout : "+flour+"\nTopping : "+
+				JOptionPane.showMessageDialog(lblPer,"Size : S\nFlout : "+flour+"\nTopping : "+
 				top1+"\nTopping : "+top2+"\nPrice : "+price, "Bill",JOptionPane.PLAIN_MESSAGE);	
 				System.exit(0);
 			}
